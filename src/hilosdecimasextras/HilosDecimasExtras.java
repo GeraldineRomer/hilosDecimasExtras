@@ -18,7 +18,7 @@ public class HilosDecimasExtras {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int vectorOriginal[]={1,2,3,4};
+        int vectorOriginal[]={3,2,3,4,5};
         int vectorClone1[]=new int[vectorOriginal.length/2];
         int vectorClone2[]=new int[vectorOriginal.length/2];
         
@@ -27,13 +27,13 @@ public class HilosDecimasExtras {
         }
         
         int x=0;
-        for (int i = vectorOriginal.length/2; i <vectorOriginal.length ; i++) {
+        for (int i = (vectorOriginal.length/2)+1; i <vectorOriginal.length ; i++) {
             vectorClone2[x]=vectorOriginal[i];
             x++;
         }
         
-        for (int i = 0; i < vectorClone2.length; i++) {
-            System.out.println(vectorClone2[i]+"-");
+        for (int i = 0; i < vectorClone1.length; i++) {
+            System.out.println("-"+vectorClone1[i]);
         }
         
         Parte1 hilito1=new Parte1(vectorClone1);
